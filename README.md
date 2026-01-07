@@ -3,7 +3,7 @@
 </p>
 
 <h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This demonstration outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+This demonstration outlines the implementation of on-premises Active Directory within Azure Virtual Machines. Moreover, it will show how group policy is used to manage accounts.<br />
 
 
 <h2>Environments and Technologies Used</h2>
@@ -12,6 +12,7 @@ This demonstration outlines the implementation of on-premises Active Directory w
 - Remote Desktop
 - Active Directory Domain Services
 - PowerShell
+- Group Policy
 
 <h2>Operating Systems Used </h2>
 
@@ -20,7 +21,7 @@ This demonstration outlines the implementation of on-premises Active Directory w
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
+- Preparing AD Infrastructure in Azure 
 - Step 2
 - Step 3
 - Step 4
