@@ -17,7 +17,7 @@ This demonstration outlines the implementation of on-premises Active Directory w
 <h2>Operating Systems Used </h2>
 
 - Windows Server 2022
-- Windows 10 (21H2)
+- Windows 11 Pro (25H2) 
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
@@ -30,8 +30,7 @@ This demonstration outlines the implementation of on-premises Active Directory w
 
 Step 1
 ------
-The beginning of a ticket lifecycle is the creation of the ticket. To create a ticket with osTicket, I went to the webpage http://localhost/osTicket. Then I clicked on "Open New Ticket".
-In this example, the person who is creating the ticket is Karen Doe. She chose the "Help Topic" called "Report a Problem/Business Critical Outage" since the online banking system is down. Once the necessary information was filled in, she clicked on "Create Ticket".
+Microsoft Azure will be used in this demonstration to implement on-premises Active Directory. A resource group and vnet were created called Active-Directory-Lab and Active-Directory-Lab respectively. Two virtual machines (VM) were also created. One was the Windows Server 2022, which is called dc-1, and it's the domain controller. The other system was Windows 11 Pro version 25H2 called client-1.
 
 ![image alt](https://github.com/brianknutson/ticket-lifecycle/blob/e2cf5ed9a6604198e07ad530fd47aefb6e2d5d5b/1.1.PNG)
 
