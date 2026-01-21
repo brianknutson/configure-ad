@@ -34,21 +34,13 @@ Microsoft Azure will be used in this demonstration to implement on-premises Acti
 
 ![image alt](https://github.com/brianknutson/configure-ad/blob/119d2333ade4857384b29fa4686e7646e32336cc/Step1.0.png)
 
-![image alt](https://github.com/brianknutson/ticket-lifecycle/blob/e2cf5ed9a6604198e07ad530fd47aefb6e2d5d5b/1.2.PNG)
-
 Step 2
 ------
-The next stage of a ticket lifecycle is the assignment and communication phase. In this phase, a help desk agent called John will assign the ticket to the appropriate department, so the ticket can be completed. To assign a ticket, he went to the webpage http://localhost/osTicket/scp/login.php. Then he logged in. 
+By default, the VM will get a private and a public remote. The private remote will be dynamic, which means the IP address can change. For example, if this VM gets turned off and another VM is created, the new VM might take over dc-1’s old IP address. This would be typically fine; however, dc-1 will be acting as a DNS server. If dc-1’s IP address changes, the settings for client-1 will no longer be valid. Therefore, I will change dc-1 IP address to be static, so the IP address doesn’t change. 
 
-Next, he went to "Tickets" and then clicked on the recent ticket created by Karen Doe. With some tickets, you may want to communicate with the person who created the ticket to get further insights as to what is going on and if the problem is persisting. In this example, the "SLA Plan" will be set to "Sev-A" because there is a wide impact on online banking, affecting most users. Once the info was filled in, he clicked on "Update Plan". 
+To make the dc-1 IP address static, I went to the IP configurations of dc-1 and clicked on “Static” for the “Allocation” option. Then I pressed “Save”. 
 
-Next, he assigned the ticket. He clicked on "— Unassigned —". The "Assignee" was to be "Online Banking" since the online banking system is affected. 
-
-![image alt](https://github.com/brianknutson/ticket-lifecycle/blob/e2cf5ed9a6604198e07ad530fd47aefb6e2d5d5b/2.1.PNG)
-
-![image alt](https://github.com/brianknutson/ticket-lifecycle/blob/e2cf5ed9a6604198e07ad530fd47aefb6e2d5d5b/2.2.PNG)
-
-![image alt](https://github.com/brianknutson/ticket-lifecycle/blob/e2cf5ed9a6604198e07ad530fd47aefb6e2d5d5b/2.3.PNG)
+![image alt](https://github.com/brianknutson/configure-ad/blob/1d35e42683036d8f2de9345fd1ae00be2369b714/Step2.png)
 
 Step 3
 ------
