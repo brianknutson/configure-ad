@@ -50,4 +50,14 @@ To disable Windows Firewall for dc-1, I used Remote Desktop to connect to dc-1. 
 
 ![image alt](https://github.com/brianknutson/configure-ad/blob/5a5b947bb9a6f221d2d23013ad57d586b2539312/Step2.0.png)
 
-![image alt]()
+Step 4
+------
+Client-1’s DNS settings are set to Microsoft Azure; however, for this lab, I want Client-1’s DNS settings to be set to dc-1 for testing purposes.
+
+The first thing I need is dc-1’s private IP address. I'll copy the private IP to paste it later.  
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/a508efae321f08d0de28fed3ecd24ae79b081102/Step3.0.png)
+
+Going to the DNS server settings for Client-1, I pressed "Custom" setting under DNS servers, so I can redirect the DNS server to dc-1 instead of Microsoft Azure. Then I pasted dc-1's private IP address to the DNS server making the connection from Client-1 to dc-1. 
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/905a5ad4313e09cc02e79f36d95dce475c08cfa0/Step3.1.png)
