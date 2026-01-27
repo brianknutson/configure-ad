@@ -61,3 +61,11 @@ The first thing I need is dc-1’s private IP address. I'll copy the private IP 
 Going to the DNS server settings for Client-1, I pressed "Custom" setting under DNS servers, so I can redirect the DNS server to dc-1 instead of Microsoft Azure. Then I pasted dc-1's private IP address to the DNS server making the connection from Client-1 to dc-1. 
 
 ![image alt](https://github.com/brianknutson/configure-ad/blob/905a5ad4313e09cc02e79f36d95dce475c08cfa0/Step3.1.png)
+
+Step 5
+------
+I want to ensure that Client-1 can connect to DC-1. 
+
+To ensure this, I used Remote Desktop to connect to Client-1. Then I opened PowerShell and used the “ping” command to the dc-1 private IP address. 
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/d6f18aff624abdfe4c835ea33b2835a365d9d708/Step4.png)
