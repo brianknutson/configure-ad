@@ -68,4 +68,14 @@ I want to ensure that Client-1 can connect to DC-1.
 
 To ensure this, I used Remote Desktop to connect to Client-1. Then I opened PowerShell and used the “ping” command to the dc-1 private IP address. 
 
+I know the connection was successful because there isn't a "Destination host unreachable" and all Packets were recevied. 
+
 ![image alt](https://github.com/brianknutson/configure-ad/blob/d6f18aff624abdfe4c835ea33b2835a365d9d708/Step4.png)
+
+Step 6
+------
+Next, I want to ensure that Client-1's DNS settings is set for dc-1. 
+
+To check this, I used PowerShell in Client-1 and used the "ipconfig /all" command. I found the DNS Servers and saw that dc-1's private IP address was used, meaning that Client-1's DNS settigns is set for dc-1. 
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/a24171bca56a2a4239f4c5b15c43551a665eae1e/Step4.1.png)
