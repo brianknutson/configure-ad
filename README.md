@@ -79,3 +79,9 @@ Next, I want to ensure that Client-1's DNS settings is set for dc-1.
 To check this, I used PowerShell in Client-1 and used the "ipconfig /all" command. I found the DNS Servers and saw that dc-1's private IP address was used, meaning that Client-1's DNS settigns is set for dc-1. 
 
 ![image alt](https://github.com/brianknutson/configure-ad/blob/a24171bca56a2a4239f4c5b15c43551a665eae1e/Step4.1.png)
+
+<h2>Deployment and Configuration Steps</h2>
+
+Step 1
+------
+
