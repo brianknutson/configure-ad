@@ -22,9 +22,9 @@ This demonstration outlines the implementation of on-premises Active Directory w
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Preparing AD Infrastructure in Azure 
-- Step 2
-- Step 3
-- Step 4
+- Deploying Active Directory
+- Creating Users with PowerShell
+- Group Policy and Managing Accounts 
 
 <h2>Deployment and Configuration Steps</h2>
 
