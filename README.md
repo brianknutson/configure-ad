@@ -44,14 +44,10 @@ To make the dc-1 IP address static, I went to the IP configurations of dc-1 and 
 
 Step 3
 ------
-The next stage of a ticket lifecycle is working on the issue. At this stage, Jane Doe, who is a part of the online banking team, worked through this ticket. Like before, she went to "Tickets" and then clicked on the recent ticket created by Karen Doe. 
+To make it easier to test connectivity and general testing for this lab, I disabled Windows Firewall for dc-1.
 
-Jane decides to work on this ticket herself, so she clicks on the "Online Banking" next to the "Assigned To". Then she assigns the ticket to herself. With osTicket, you can make updates with other agents through "Post a Reply".
+To disable Windows Firewall for dc-1, I used Remote Desktop to connect to dc-1. I went to Windows Defender Firewall then clicked on "Windows Defender Firewall Properties. Under the "Domain Profile", "Private Profile", and "Public Profile", I turned off the Firewall state. I pressed "Apply" then "Ok". 
 
-Karen believes the issue could stem from the recent updates to the online banking system, so she posted a reply relaying this belief. After working through the issue, Karen determined that the root cause of the issue was the recent update to the online banking system. She rolled back the update, getting the online banking system up and running. Then she notified the vendor. Karen made another post explaining this situation. 
+![image alt](https://github.com/brianknutson/configure-ad/blob/5a5b947bb9a6f221d2d23013ad57d586b2539312/Step2.0.png)
 
-![image alt](https://github.com/brianknutson/ticket-lifecycle/blob/e2cf5ed9a6604198e07ad530fd47aefb6e2d5d5b/3.1.PNG)
-
-![image alt](https://github.com/brianknutson/ticket-lifecycle/blob/e2cf5ed9a6604198e07ad530fd47aefb6e2d5d5b/3.2.PNG)
-
-![image alt](https://github.com/brianknutson/ticket-lifecycle/blob/e2cf5ed9a6604198e07ad530fd47aefb6e2d5d5b/3.3.PNG)
+![image alt]()
