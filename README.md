@@ -93,3 +93,23 @@ To install Active Directory Domain Services, I went into the Server Manager and 
 I continued to press "Next" until I got to the "Confirmation" page where I again clicked on "Install". 
 
 ![image alt](https://github.com/brianknutson/configure-ad/blob/1ed3fd04ed0104ca332cdf8b4d937537daaf56db/Step5.1.png)
+
+Step 2
+------
+Now that I installed Active Directory Domain Services, it's time to promote dc-1 as a domain controller(DC). 
+
+To achieve this, I clicked on the flag icon then pressed "Promote this server to a domain controller". 
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/48f155992f9319f587951d28e32a87db5effbf8d/Step6.0.png)
+
+Next, I clicked on "Add a new forest". Then named my Root domain name as "mydomain.com". 
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/48f155992f9319f587951d28e32a87db5effbf8d/Step6.1.png)
+
+I unchecked "Create DNS delegation". 
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/48f155992f9319f587951d28e32a87db5effbf8d/Step6.2.png)
+
+Finally, within "Prerequisties Check", I clicked on "Install" to make dc-1 as a domain controller. 
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/48f155992f9319f587951d28e32a87db5effbf8d/Step6.3.png)
