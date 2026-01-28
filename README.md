@@ -85,3 +85,6 @@ To check this, I used PowerShell in Client-1 and used the "ipconfig /all" comman
 Step 1
 ------
 
+![image alt](https://github.com/brianknutson/configure-ad/blob/1ed3fd04ed0104ca332cdf8b4d937537daaf56db/Step5.0.png)
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/1ed3fd04ed0104ca332cdf8b4d937537daaf56db/Step5.1.png)
