@@ -84,7 +84,12 @@ To check this, I used PowerShell in Client-1 and used the "ipconfig /all" comman
 
 Step 1
 ------
+Since I'm done with preparing active directory infrastructure in Azure, it's time to deploy active directory. First, I need to install it, so I logined into dc-1 and to install Active Directory Domain Services. 
+
+To install Active Directory Domain Services, I went into the Server Manager and clicked on "Add roles and features". Once I got to "Server Roles", I clicked on "Active Domain Services to install it. 
 
 ![image alt](https://github.com/brianknutson/configure-ad/blob/1ed3fd04ed0104ca332cdf8b4d937537daaf56db/Step5.0.png)
+
+I continued to press "Next" until I got to the "Confirmation" page where I again clicked on "Install". 
 
 ![image alt](https://github.com/brianknutson/configure-ad/blob/1ed3fd04ed0104ca332cdf8b4d937537daaf56db/Step5.1.png)
