@@ -113,3 +113,18 @@ I unchecked "Create DNS delegation".
 Finally, within "Prerequisties Check", I clicked on "Install" to make dc-1 as a domain controller. 
 
 ![image alt](https://github.com/brianknutson/configure-ad/blob/48f155992f9319f587951d28e32a87db5effbf8d/Step6.3.png)
+
+Step 3
+------
+Because dc-1 restarted after the installation. I need to log back in. However, since dc-1 is a domain controller now, I need to specify the context to which I want to login as either as a local user or as a domain account. In this demonstration because I want to work on the domain controller, I will log in as mydomain.com\labuser
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/04f27efb98c0f30f0c74956732151eb61d02298e/Step7.0.png)
+
+Step 4
+------
+
+![image alt]()
+![image alt]()
+![image alt]()
+![image alt]()
+![image alt]()
