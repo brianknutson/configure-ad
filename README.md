@@ -177,6 +177,15 @@ I made another organizational unit called “_CLIENTS” and dragged Client-1 in
 
 ![image alt](https://github.com/brianknutson/configure-ad/blob/e966a64be7e1e311e4afee346ea7848cc10bf6c6/10.1.png)
 
+<h2>Creating Users with PowerShell</h2>
+
+Step 1
+------
+
+<h2>Group Policy and Managing Accounts</h2>
+
+Step 1
+------
 
 ![image alt]()
 ![image alt]()
