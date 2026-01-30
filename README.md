@@ -123,8 +123,8 @@ Because dc-1 restarted after the installation. I need to log back in. However, s
 Step 4
 ------
 
-![image alt]()
-![image alt]()
-![image alt]()
-![image alt]()
+![image alt](https://github.com/brianknutson/configure-ad/blob/4282c5e9c76b5334bef4ee4936ad35db1c368eda/8.0.png)
+![image alt](https://github.com/brianknutson/configure-ad/blob/4282c5e9c76b5334bef4ee4936ad35db1c368eda/8.1.png)
+![image alt](https://github.com/brianknutson/configure-ad/blob/4282c5e9c76b5334bef4ee4936ad35db1c368eda/8.2.png)
+![image alt](https://github.com/brianknutson/configure-ad/blob/4282c5e9c76b5334bef4ee4936ad35db1c368eda/8.3.png)
 ![image alt]()
