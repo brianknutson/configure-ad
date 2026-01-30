@@ -163,8 +163,21 @@ Because I set the DNS settings to use the dc-1 private IP address, it is able to
 I entered the account information of the admin account I created earlier (jane_admin to complete the process of joining Client-1 to my domain (mydomain.com). 
 
 ![image alt](https://github.com/brianknutson/configure-ad/blob/8c3b2d9e9467ba08d1edd97e4c3e009d435ccb70/9.2.png)
-![image alt]()
-![image alt]()
+
+
+Step 6
+------
+I want to verify that Client-1 shows up in “Active Directory Users and Computers”.
+
+To verify, I logged in to dc-1, and I went to “Active Directory Users and Computers. Under the “Computers” folder, there is Client-1. 
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/e966a64be7e1e311e4afee346ea7848cc10bf6c6/10.0.png)
+
+I made another organizational unit called “_CLIENTS” and dragged Client-1 into there to make this lab more organized. 
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/e966a64be7e1e311e4afee346ea7848cc10bf6c6/10.1.png)
+
+
 ![image alt]()
 ![image alt]()
 ![image alt]()
