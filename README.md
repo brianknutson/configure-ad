@@ -145,4 +145,27 @@ I went to the properties of jane_admin, clicked on “Member Of”, and then “
 For the remainder of the lab, I will use jane_admin as my admin account.  
 
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4282c5e9c76b5334bef4ee4936ad35db1c368eda/8.3.png)
+
+Step 5
+------
+Now I will finish joining client-1 to my domain (mydomain.com). 
+
+I log in to Client-1 as the original local admin, go to “System”, then “Domain or workgroup”, and then I click on “Change”. 
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/8c3b2d9e9467ba08d1edd97e4c3e009d435ccb70/9.0.png)
+
+Under “Member of” and “Domain”, I entered “mydomain.com” then “OK”. 
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/8c3b2d9e9467ba08d1edd97e4c3e009d435ccb70/9.1.png)
+
+Because I set the DNS settings to use the dc-1 private IP address, it is able to locate the domain controller of mydomain.com domain. If I didn’t do that, I would get an error message about not being able to find the domain controller. 
+
+I entered the account information of the admin account I created earlier (jane_admin to complete the process of joining Client-1 to my domain (mydomain.com). 
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/8c3b2d9e9467ba08d1edd97e4c3e009d435ccb70/9.2.png)
+![image alt]()
+![image alt]()
+![image alt]()
+![image alt]()
+![image alt]()
 ![image alt]()
