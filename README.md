@@ -122,9 +122,27 @@ Because dc-1 restarted after the installation. I need to log back in. However, s
 
 Step 4
 ------
+Now I need to create an admin, but before I do that, I will create two organizational units: _EMPLOYEES and _ADMINS. I put an underscore to differentiate them from other groups. 
+
+To do this, I went to “Active Directory Users and Computers”, right-clicked on “mydomain.com”, clicked on " New ", then “Organizational Unit”.
 
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4282c5e9c76b5334bef4ee4936ad35db1c368eda/8.0.png)
+
+For the name, I entered _EMPLOYEES. After I went through the same process for the next organizational unit: _ADMINS. 
+
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4282c5e9c76b5334bef4ee4936ad35db1c368eda/8.1.png)
+
+For the next part, I will create a new employee named “Jane Doe” within the _ADMINS folder. 
+
+I right-clicked on _ADMINS, hovered over “New”, then finally clicked on “Users”. After I filled in the necessary information. 
+
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4282c5e9c76b5334bef4ee4936ad35db1c368eda/8.2.png)
+
+Even though jane_admin has admin in the name, Jane is not an admin yet. I need to add her to the “Domain Admins” Security Group. 
+
+I went to the properties of jane_admin, clicked on “Member Of”, and then “Add”. I typed in “Domain Admins” and then clicked on “Check Names” to ensure I had Domain Admins. Finally, I pressed “Ok”, “Apply”, and “Ok”.
+
+For the remainder of the lab, I will use jane_admin as my admin account.  
+
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4282c5e9c76b5334bef4ee4936ad35db1c368eda/8.3.png)
 ![image alt]()
