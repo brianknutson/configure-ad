@@ -181,13 +181,25 @@ I made another organizational unit called “_CLIENTS” and dragged Client-1 in
 
 Step 1
 ------
+Now, I will set up remote desktop for non-administrative users on Client-1. 
+
+I logged into Client-1. Opened system properties, then clicked on “Remote Desktop”. After I clicked on “Remote Desktop users”.
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/3fa5c65918b6a01f1ca25ae1e9dd1c0fe08f95a5/11.0.png)
+
+Within “Remote Desktop Users”, I clicked on “Add…”, then I entered “Domain Users for the object name. Finally, I pressed “OK” for “Select Users or Groups” and again for “Remote Desktop Users” to confirm the settings.  
+
+Now I can log into Client-1 as a normal, non-administrative user. Typically, you can do this with Group Policy, which allows you to change many systems at once. 
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/3fa5c65918b6a01f1ca25ae1e9dd1c0fe08f95a5/11.1.png)
+
+Step 2
+------
 
 <h2>Group Policy and Managing Accounts</h2>
 
 Step 1
 ------
 
-![image alt]()
-![image alt]()
 ![image alt]()
 ![image alt]()
