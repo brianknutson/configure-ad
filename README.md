@@ -195,6 +195,23 @@ Now I can log into Client-1 as a normal, non-administrative user. Typically, you
 
 Step 2
 ------
+Now I will create a bunch of additional users using a script for this lab. The script will create 10,000 users, all with the same password. 
+
+I logged in to dc-1, then opened “PowerShell ISE” as an administrator. Next, I created a new File and pasted the script into it. 
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/72f409d386face307db2c15241cc7c8a7eea3b3b/12.0.png)
+
+I ran the script and pressed “OK”. 
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/72f409d386face307db2c15241cc7c8a7eea3b3b/12.1.png)
+
+When finished, I opened “Active Directory Users and Computers” to observe the new accounts within the “_EMPLOYEES) organizational unit.
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/72f409d386face307db2c15241cc7c8a7eea3b3b/12.2.png)
+
+I used the beg.hexa account, which was just created, to log into Client-1 to make sure that it worked. 
+
+![image alt](https://github.com/brianknutson/configure-ad/blob/72f409d386face307db2c15241cc7c8a7eea3b3b/12.3.png)
 
 <h2>Group Policy and Managing Accounts</h2>
 
