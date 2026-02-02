@@ -218,5 +218,20 @@ I used the beg.hexa account, which was just created, to log into Client-1 to mak
 Step 1
 ------
 
-![image alt]()
+![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.0.png)
+![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.1.png)
+![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.2.png)
+![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.3.png)
+![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.4.png)
+![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.5.png)
+![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.6.png)
+![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.7.png)
+![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.8.png)
+![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.9.png)
+![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.10.png)
+![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.11.png)
+![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.12.png)
+![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.13.png)
+![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.14.png)
+![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.15.png)
 ![image alt]()
