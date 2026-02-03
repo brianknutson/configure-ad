@@ -217,21 +217,74 @@ I used the beg.hexa account, which was just created, to log into Client-1 to mak
 
 Step 1
 ------
+Within this section, I wanted to test and use the group policy settings and the event viewer. 
+
+To change the group policy settings, I needed to go into dc-1 and then into the “Group Policy Management” section. Within “mydomain.com”, then “Default Domain Policy”, I clicked on “Edit” to get to the “Group Policy Management Editor”.
 
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.0.png)
+
+After getting to the “Group Policy Management Editor”, I go into the “Account Lockout Policy, then to “Account lockout duration”. I change the setting from “Not Defined” to 30 minutes. I pressed “Apply” then “OK”. 
+
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.1.png)
+
+By changing the “Account lockout duration”, the “Account lockout threshold” was automatically changed from 0 invalid logon attempts to 5 invalid logon attempts. 
+
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.2.png)
+
+Step 2
+------
+Before I used a domain user account, I wanted to ensure that the new group policy was updated. I logon into Client-1 as the mydomain.com\jane_admin account to use the “Command Line” to force the update using the command “gpupdate /force”. 
+
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.3.png)
+
+After I used the “gpresult /r” command to confirm the new group policy update was applied. Because the time since the last time the group policy was applied was only a few minutes ago at the time, I knew my new group policy was updated. Then I log out of Client-1. 
+
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.4.png)
+
+Step 3
+------
+With the new group policy set up, I used a domain user that I created with the script earlier to purposely fail to log into Client-1 5 times to get the error message about the failed logon attempts. 
+
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.5.png)
+
+With the account lockout, I now wanted to unlock this account (beg.hexa). I logged on to dc-1 with the admin account and went into “Active Directory Users and Computers”, then used the search “Find” function to search for the locked-out account. Within the user’s properties, I checked to unlock the account. Finally, I clicked on “Apply” then “OK” to confirm. 
+
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.6.png)
+
+Now, if I wanted to change the user’s password, I could have right-clicked on this account to click “Reset Password” within “Active Directory Users and Computers”. 
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.7.png)
+
+Then I would simply enter the new password and hit “OK”. 
+
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.8.png)
+
+Step 4
+------
+For some testing, I wanted to disable the user’s account. Again, within dc-1 then “Active Directory Users and Computers”, I right-clicked on this account to click “Disable Account”. 
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.9.png)
+
+I refreshed the page to see if the user’s account was disabled. With the down arrow icon, I was able to confirm the account was disabled. 
+
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.10.png)
+
+Using the account I just disabled, I tried logging into Client-1, leading to an error message about the account being disabled. 
+
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.11.png)
+
+Within dc-1, I enable the disabled account by right-clicking on this account to click “Enable Account” within “Active Directory Users and Computers”.
+
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.12.png)
+
+After enabling the account, I get a message about the account being enabled.
+
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.13.png)
+
+Step 5
+------
+After logging into Client-1 with the user’s account, I wanted to check the login in the “Event Viewer” to see the failed login attempts. However, in order to see these attempts, I needed to use administrator access, so I had to enter the admin’s username and password to access "Event Viewer". After using the find function, I was able to see those failed login attempts from earlier. 
+
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.14.png)
+
+The code “4625” means a failed login attempt, which can be seen next to “Failure Reason” with “Unknown username or bad password”. 
+
 ![image alt](https://github.com/brianknutson/configure-ad/blob/4a0dae81f00391ec0a12a5afc40d50651e657bf9/13.15.png)
-![image alt]()
